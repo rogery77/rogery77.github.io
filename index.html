@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{border-bottom:1px solid #262c3a;padding-bottom:8px;text-transform:none;letter-spacing:.04em;font-size:14px}
 .card{background:#212734d9;border:1px solid #262c3a;border-radius:4px;padding:20px;backdrop-filter:blur(8px);box-shadow:0 2px 6px rgba(0,0,0,.08)}
 body::before{content:'';display:block;height:5px;background:#94a3b8;position:sticky;top:0;z-index:9}
-body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(#262c3a 1px, transparent 1px);background-size:22px 22px}
+background-image:radial-gradient(#262c3a 1px, transparent 1px);background-size:22px 22px;
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>我关注提示词复述偏差，因为它直接影响结论可不可信。 当前以硕士阶段研究角色的方式推进项目。</p>
+  <p>我关注提示词复述偏差，因为它直接影响结论可不可信。</p>
   <ul class="traits">
     <li>先给定位手段，再给处置手段。</li>
     <li>每个命令都写清会在什么情况下失败。</li>
@@ -89,20 +89,12 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
   <div class="grid two">
     <article class="card">
       <h3>提示词复述偏差在不同数据分布下的稳健性</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>提示词复述偏差的判定依据与复核方式</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>提示词复述偏差里容易误判的情形与反例</h3>
-      <span class="status">持续跟进</span>
-    </article>
-    <article class="card">
-      <h3>在推进的问题</h3>
-      <p>（提示词复述偏差场景）要让提示词复述偏差在分布变化下不退化，需要满足什么条件？用口径一致性比对验证并报告退化幅度。</p>
-      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -110,9 +102,6 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
-    <li><div class="name"><a href="https://github.com/rogery77/consistency_trace_based_analysis_077d2066" rel="noopener">consistency_trace_based_analysis_077d2066</a></div>
-      <div class="desc">（提示词复述偏差场景）要让提示词复述偏差在分布变化下不退化，需要满足什么条件？用口径一致性比对验证并报告退化幅度。</div>
-    </li>
     <li><div class="name"><a href="https://github.com/rogery77/parrotline" rel="noopener">parrotline</a></div>
       <div class="desc">逐条比对原文与复述，找出遗漏的约束、弱化的语气与新增的不存在的限制</div>
     </li>
